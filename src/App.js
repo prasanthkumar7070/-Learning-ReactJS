@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import TodoList from "./TodoApp/TodoList";
+import { createContext, useState } from "react";
+import ContextAPI from "./ContextAPI/ContextAPI";
+import LoginForm from "./ConditionalRendering/LoginForm";
+
+export const store = createContext();
 
 function App() {
+  const [data, setData] = useState([
+    { id: 1, title: "Learn React" },
+    { id: 2, title: "Learn Redux" },
+    { id: 3, title: "Learn ContextAPI" },
+  ]);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      {/* <TodoList />
+
+      <store.Provider value={{data,setData}}>
+         <ContextAPI/>
+      </store.Provider> */}
+      <LoginForm />
     </div>
   );
 }
