@@ -16,7 +16,7 @@ const ContextAPI = () => {
     setData(newData);
   };
   return (
-    <div>
+    <div>     
       <h3 className="text-center mt-5">Context API</h3>
       <h1 className="text-center">Count {data?.length}</h1>
       {data.map((item, i) => (

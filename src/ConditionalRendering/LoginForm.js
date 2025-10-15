@@ -15,14 +15,12 @@ const LoginForm = () => {
     } else {
       setError("Invalid email or password");
     }
-    console.log("form submitted successfully");
   };
 
   const handleLogout = () => {
     setIsLoggedIn(false);
     setEmail("");
     setPassword("");
-    console.log("form Loged Out successfully");
   };
 
   return (

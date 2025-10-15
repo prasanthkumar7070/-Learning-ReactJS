@@ -1,0 +1,31 @@
+.fetching-api {
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+  background: #f3f3f3;
+  border-radius: 10px;
+  box-shadow: 0 0 5px gray;
+}
+
+.fetching-api input {
+  padding: 8px;
+  margin-right: 8px;
+}
+
+.fetching-api button {
+  padding: 8px 12px;
+  margin: 5px;
+  cursor: pointer;
+  border: none;
+  background: #0078d7;
+  color: white;
+  border-radius: 4px;
+}
+
+.user-card {
+  background: #fff;
+  margin: 10px 0;
+  padding: 8px;
+  border-radius: 6px;
+  box-shadow: 0 0 4px lightgray;
+}
