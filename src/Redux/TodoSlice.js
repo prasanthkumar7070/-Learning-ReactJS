@@ -33,7 +33,7 @@ const todoSlice = createSlice({   //createSlice is a function that accepts an in
     addTodo: (state, action) => {
       state.todoList.push({
         id: Date.now(),           
-        text: action.payload,
+        text: action.payload,      
       });
     //   saveToLocalStorage(state.todoList);
     },

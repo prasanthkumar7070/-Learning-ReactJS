@@ -10,7 +10,10 @@ import TodoList from "./Redux/TodoList";
 import JSONPlaceHolder from "./FetchingAPI/JSONPlaceHolder";
 import Axios from "./FetchingAPI/Axios";
 import UseMemo from "./Hooks/UseMemo";
-
+import ReduxTodos from "./OldRedux/ReduxTodos";
+import UseCallback from "./Hooks/UseCallBack";
+import PropDrilling from "./PropDrilling/PropDrilling";
+import UseReff from "./Hooks/UseReff";
 export const store = createContext();
 
 function App() {
@@ -30,12 +33,17 @@ function App() {
       </store.Provider> */}
       {/* <LoginForm /> */}
       <div className="mt-5">
-        <h2>📝 Redux Todo App</h2>
-        <TodoInput />
-        <TodoList />
-        <JSONPlaceHolder />
-        {/* <Axios /> */}
+        {/* <h2>📝 Redux Todo App</h2> */}
+        {/* <TodoInput />
+
+        <TodoList /> */}
+        <ReduxTodos />
+        {/* <JSONPlaceHolder />
+        <Axios /> */}
         {/* <UseMemo /> */}
+        {/* <UseCallback /> */}
+        {/* <PropDrilling /> */}
+        <UseReff />
       </div>
     </div>
   );

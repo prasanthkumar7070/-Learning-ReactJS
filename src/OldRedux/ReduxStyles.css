@@ -1,0 +1,104 @@
+/* General page styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container for the app */
+.app-container {
+  max-width: 500px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* App title */
+h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Input and button */
+input {
+  padding: 10px;
+  width: 70%;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 15px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* Add button style */
+button.add-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+/* Update button style */
+button.update-btn {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Todo list */
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+/* Individual todo items */
+li {
+  background-color: #f9f9f9;
+  padding: 12px 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+}
+
+/* Completed todo */
+li.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+/* Action buttons inside todo */
+li button {
+  margin-left: 5px;
+  padding: 6px 10px;
+  font-size: 14px;
+  border-radius: 6px;
+}
+
+/* Edit button */
+li button.edit-btn {
+  background-color: #ffc107;
+  color: white;
+  border: none;
+}
+
+/* Delete button */
+li button.delete-btn {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+}

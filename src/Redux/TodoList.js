@@ -4,10 +4,10 @@ import { deleteTodo, updateTodo } from "./TodoSlice";
 import "./Todo.css";
 
 const TodoList = () => {
-  const todos = useSelector((state) => state.todos.todoList);
-  const dispatch = useDispatch();
+  const todos = useSelector((state) => state.todos.todoList); // Get todos from store
+  const dispatch = useDispatch(); // Used to send actions
 
-  const [editId, setEditId] = useState(null);  
+  const [editId, setEditId] = useState(null);
   const [editText, setEditText] = useState("");
 
   const handleEdit = (todo) => {
@@ -56,7 +56,9 @@ const TodoList = () => {
               <>
                 <span>{todo.text}</span>
                 <div>
-                  <button onClick={() => handleEdit(todo)} className="edit-btn">Edit</button>
+                  <button onClick={() => handleEdit(todo)} className="edit-btn">
+                    Edit
+                  </button>
                   <button onClick={() => dispatch(deleteTodo(todo.id))}>
                     Delete
                   </button>
