@@ -1,7 +1,7 @@
 // Action types
-export const ADD_TODO = 'ADD_TODO';
-export const UPDATE_TODO = 'UPDATE_TODO';
-export const DELETE_TODO = 'DELETE_TODO';
+export const ADD_TODO = "ADD_TODO";
+export const UPDATE_TODO = "UPDATE_TODO";
+export const DELETE_TODO = "DELETE_TODO";
 
 // Action creators
 export const addTodo = (text) => ({
@@ -17,4 +17,4 @@ export const updateTodo = (id, text) => ({
 export const deleteTodo = (id) => ({
   type: DELETE_TODO,
   payload: id,
-});  
+});

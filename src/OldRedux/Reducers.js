@@ -1,14 +1,13 @@
 import { ADD_TODO, UPDATE_TODO, DELETE_TODO } from "./Actions";
 
-const initialState = { 
+const initialState = {
   todos: [],
 };
 
-export const todoReducer = (state = initialState, action) => { 
+export const todoReducer = (state = initialState, action) => {
   switch (action.type) {
     case ADD_TODO:
       return {
-           
         todos: [...state.todos, { id: Date.now(), text: action.payload }],
       };
 

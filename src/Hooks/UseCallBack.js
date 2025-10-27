@@ -13,8 +13,10 @@ const UseCallback = () => {
       setUsers(response.data);
     });
   }, []);
-//By using the useCallback hook, we can memoize the functions and only recreate them when their dependencies change.
-  // 🔹 useCallback memoizes the function so it's not recreated on every render
+
+  //By using the useCallback hook, we can memoize the functions and only recreate them when their dependencies change.
+  //useCallback memoizes the function so it's not recreated on every render
+  
   const filterUsers = useCallback(() => {
     return users.filter((user) =>
       user.name.toLowerCase().includes(search.toLowerCase())
@@ -23,25 +25,24 @@ const UseCallback = () => {
 
   const filteredList = filterUsers();
 
-  return (  
+  return (
     <div className="usecallback-list-container">
       <h1>User Search (useCallback Example)</h1>
 
       <input
-        type="text"
+        type="text" 
         placeholder="Search user..."
         value={search}
         onChange={(e) => setSearch(e.target.value)}
       />
-
+   
       <ul>
         {filteredList.map((user) => (
           <li key={user.id}>{user.name}</li>
         ))}
       </ul>
     </div>
-  );
+  ); 
 };
 
 export default UseCallback;
-

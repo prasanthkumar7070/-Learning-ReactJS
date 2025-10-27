@@ -3,7 +3,7 @@ import React, { useEffect, useMemo, useState } from "react";
 import "./Hooks.css";
 
 const UseMemo = () => {
-  const [users, setUsers] = useState([]);     
+  const [users, setUsers] = useState([]);
   const [searchTerm, setSearchTerm] = useState(""); // store user input
 
   useEffect(() => {
@@ -14,12 +14,12 @@ const UseMemo = () => {
   }, []);
 
   // useMemo to filter users efficiently
-  const filterUsers = useMemo(() => {
+  const filterUsers = useMemo(() => { // runs only when users or searchTerm changes
     return users.filter((user) =>
       user.name.toLowerCase().includes(searchTerm.toLowerCase())
     );
   }, [users, searchTerm]);
-   
+
   return (
     <div className="usememo-list-container">
       <h1>User Search (useMemo Example)</h1>

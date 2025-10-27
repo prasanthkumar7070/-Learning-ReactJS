@@ -27,7 +27,10 @@ const ReduxTodos = () => {
     setEditId(todo.id);
   };
   return (
-    <div style={{ textAlign: "center", marginTop: "50px" }}>
+    <div
+      style={{ textAlign: "center", marginTop: "50px" }}
+      className="redux-todos"
+    >
       <h2>📝 Redux Todo App (Add, Update, Delete)</h2>
 
       <input
@@ -44,18 +47,20 @@ const ReduxTodos = () => {
         {todos.map((todo) => (
           <li key={todo.id} style={{ marginBottom: "10px" }}>
             {todo.text}
-            <button
-              onClick={() => handleEdit(todo)}
-              style={{ marginLeft: "10px" }}
-            >
-              Edit
-            </button>
-            <button
-              className="delete-btn"
-              onClick={() => dispatch(deleteTodo(todo.id))}
-            >
-              DEL
-            </button>
+            <div>
+              <button  
+                onClick={() => handleEdit(todo)}
+                style={{ marginLeft: "10px" }}
+              >
+                Edit
+              </button>
+              <button
+                className="delete-btn"
+                onClick={() => dispatch(deleteTodo(todo.id))}
+              >
+                DEL
+              </button>
+            </div>
           </li>
         ))}
       </ul>
