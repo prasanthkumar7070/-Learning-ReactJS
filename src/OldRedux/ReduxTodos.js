@@ -8,7 +8,7 @@ const ReduxTodos = () => {
   const [editId, setEditId] = useState(null);
 
   const todos = useSelector((state) => state.todos); // Accessing todos from state
-  const dispatch = useDispatch(); 
+  const dispatch = useDispatch();
 
   const handleAddOrUpdate = () => {
     if (!task.trim()) return;
@@ -31,7 +31,7 @@ const ReduxTodos = () => {
       style={{ textAlign: "center", marginTop: "50px" }}
       className="redux-todos"
     >
-      <h2>📝 Redux Todo App (Add, Update, Delete)</h2>
+      <h1 className="text-white">📝 Redux Todo App (Add, Update, Delete)</h1>
 
       <input
         value={task}
@@ -45,10 +45,10 @@ const ReduxTodos = () => {
 
       <ul style={{ listStyle: "none", padding: 0, marginTop: "20px" }}>
         {todos.map((todo) => (
-          <li key={todo.id} style={{ marginBottom: "10px" }}>
+          <li key={todo.id} style={{ marginBottom: "10px",color:"#000" }}>
             {todo.text}
             <div>
-              <button  
+              <button
                 onClick={() => handleEdit(todo)}
                 style={{ marginLeft: "10px" }}
               >

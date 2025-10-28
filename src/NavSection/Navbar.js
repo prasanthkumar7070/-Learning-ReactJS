@@ -11,7 +11,7 @@ const Navbar = () => {
         </div>
         <ul className="nav-links">
           <li>
-            <Link to="/redux_todos">Todos List</Link>
+            <Link to="/">Todos List</Link>
           </li>
           <li>
             <Link to="/addtocart">AddToCart</Link>
@@ -21,6 +21,9 @@ const Navbar = () => {
           </li>
           <li>
             <Link to="/shakaPlayer">Video Player</Link>
+          </li>
+           <li>
+            <Link to="/contact_us">Contact Us</Link>
           </li>
         </ul>
       </nav>

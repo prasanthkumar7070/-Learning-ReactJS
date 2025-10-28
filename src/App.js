@@ -17,8 +17,9 @@ import UseReff from "./Hooks/UseReff";
 import ClassComponent from "./LifeCycle/ClassComponent";
 import Navbar from "./NavSection/Navbar";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import './App.css'
+import "./App.css";
 import ShakaPlayer from "./ShakaPlayer/ShakaPlayer";
+import Form from "./ContactUs/Form";
 export const store = createContext();
 function App() {
   const [data, setData] = useState([
@@ -53,10 +54,11 @@ function App() {
         <BrowserRouter>
           <Navbar />
           <Routes>
-            <Route path="/redux_todos" element={<ReduxTodos />} />
+            <Route path="/" element={<ReduxTodos />} />
             <Route path="/addtocart" element={<ClassComponent />} />
             <Route path="/fetching" element={<Axios />} />
             <Route path="/shakaPlayer" element={<ShakaPlayer />} />
+            <Route path="/contact_us" element={<Form />} />
           </Routes>
         </BrowserRouter>
       </div>

@@ -10,7 +10,6 @@ body {
 .app-container {
   max-width: 500px;
   margin: 50px auto;
-  background-color: #fff;
   padding: 30px;
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -21,6 +20,7 @@ h2 {
   margin-bottom: 20px;
   color: #333;
 }
+
 
 /* Input and button */
 input {

@@ -29,7 +29,7 @@ class ClassComponent extends React.Component {
 
   render() {
     return (
-      <div className="app-container">
+      <div className="apps-container">
         <h1>🛒 Add / Remove from Cart</h1>
         <p className="message">{this.state.message}</p>
         <div className="content-container">

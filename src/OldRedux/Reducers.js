@@ -1,9 +1,9 @@
 import { ADD_TODO, UPDATE_TODO, DELETE_TODO } from "./Actions";
 
 const initialState = {
-  todos: [],
+  todos: [], // Initial state with an empty todos array
 };
-
+ 
 export const todoReducer = (state = initialState, action) => {
   switch (action.type) {
     case ADD_TODO:

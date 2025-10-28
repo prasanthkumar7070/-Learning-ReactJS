@@ -17,8 +17,8 @@ const Axios = () => {
   }, []);
 
   return (
-    <div style={{ textAlign: "center", marginTop: "30px" }}>
-      <h2>Basic Axios Example</h2>
+    <div style={{ textAlign: "center", marginTop: "30px" }} className="axios-sec">
+      <h2 className="text-white">Basic Axios Example</h2>
       <div
         style={{
           display: "grid",
